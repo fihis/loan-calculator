@@ -13,6 +13,11 @@ const LoanForm: React.FC<LoanFormProps> = ({ onCalculate }) => {
     interestRate: 0,
   });
 
+  const isFormValid =
+    loanInput.loanAmount > 0 &&
+    loanInput.loanTerm > 0 &&
+    loanInput.interestRate > 0;
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setLoanInput((prev) => ({ ...prev, [name]: parseFloat(value) }));
@@ -55,7 +60,7 @@ const LoanForm: React.FC<LoanFormProps> = ({ onCalculate }) => {
           onChange={handleInputChange}
         />
       </div>
-      <button type="submit" className="submit-button">
+      <button type="submit" className="submit-button" disabled={!isFormValid}>
         Calculate
       </button>
     </form>
