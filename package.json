@@ -1,5 +1,6 @@
 {
   "name": "loan-calculator",
+  "homepage": "https://fihis.github.io/loan-calculator",
   "private": true,
   "version": "0.0.0",
   "type": "module",
