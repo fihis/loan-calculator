@@ -1,0 +1,32 @@
+.schedule-table-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.schedule-table {
+  border: 1px solid #ddd;
+}
+
+.table-header {
+  display: flex;
+  font-weight: bold;
+  background-color: #262626;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-header div {
+  flex: 1;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-row div {
+  flex: 1;
+  padding: 8px;
+  text-align: left;
+}
